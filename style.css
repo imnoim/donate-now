@@ -32,7 +32,7 @@ body {
 
 .home-part-content h1 {
     font-size: 50px;
-    font-weight: 800;
+    font-weight: bold;
     margin-bottom: 25px;
 }
 
@@ -41,10 +41,71 @@ body {
     margin-bottom: 25px;
 }
 
-.home-part-content .donate-now-button {
-    padding: 10px 40px;
-    font-size: 1.2rem;
+.donate-now-button {
+    padding: 10px 30px;
+    font-size: 1.1rem;
     background-color: #12c6c6;
     border: 0;
-    color: white;
+    color: #ffffff;
+}
+
+.donate-today {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.donate-today-header h1 {
+    font-size: 45px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.donate-today-header p {
+    font-size: 1.1rem;
+    margin-bottom: 45px;
+    color: #555555;
+}
+
+.donate-amount span {
+    padding: 30px 15px;
+    margin-bottom: 50px;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    margin-right: 10px;
+    color: #555555;
+}
+
+.donate-amount span.active {
+    border: 2px solid #12c6c6;
+    color: #12c6c6;
+    background-color: #12c6c625;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.input-field input {
+    border: 0;
+    width: 635px;
+    border-bottom: 1px solid #12c6c6;
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+.input-field input:focus {
+    border: 0;
+    outline: 0;
+    border-bottom: 1px solid #12c6c6;
 }
