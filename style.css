@@ -8,3 +8,43 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.home-part {
+    background-image: url(images/donation6.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-bottom: 100px;
+}
+
+.home-part-content {
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0px 300px;
+    color: #fff;
+    text-align: center;
+}
+
+.home-part-content h1 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 25px;
+}
+
+.home-part-content p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+}
+
+.home-part-content .donate-now-button {
+    padding: 10px 40px;
+    font-size: 1.2rem;
+    background-color: #12c6c6;
+    border: 0;
+    color: white;
+}
