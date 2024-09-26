@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donate for flood effected people</title>
+    <!-- custom css -->
+     <link rel="stylesheet" href="./css/style.css">
     <!-- google font lexend -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,30 +35,32 @@
 </head>
 
 <body class="font-lexend">
-    <!-- nav starts here -->
-    <div class="bg-navBg">
-        <div class="max-w-screen-xl mx-auto flex justify-between py-5 px-5 lg:px-0">
-            <button id="go-blog-page" class="bg-primaryBg px-8 py-1 rounded-md">Blog</button>
-            <div class="flex items-center gap-4">
-                <img src="./assets/logo.png" alt="logo-coin-money">
-                <h4 class="hidden lg:block">Donate Bangladesh</h4>
-            </div>
-            <div class="flex items-center gap-2">
-                <img src="./assets/coin.png" alt="coin-image">
-                <h4 id="account-balance">5500</h4>
-                <h4>BDT</h4>
+    <div class="sticky top-0">
+        <!-- nav starts here -->
+        <div class="bg-navBg">
+            <div class="max-w-screen-xl mx-auto flex justify-between py-5 px-5 lg:px-0">
+                <button id="go-blog-page" class="bg-primaryBg px-8 py-1 rounded-md">Blog</button>
+                <div class="flex items-center gap-4">
+                    <img src="./assets/logo.png" alt="logo-coin-money">
+                    <h4 class="hidden lg:block">Donate Bangladesh</h4>
+                </div>
+                <div class="flex items-center gap-2">
+                    <img src="./assets/coin.png" alt="coin-image">
+                    <h4 id="account-balance">5500</h4>
+                    <h4>BDT</h4>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- nav ends here -->
+        <!-- nav ends here -->
 
-    <!-- features button starts here -->
-    <div class="flex justify-center gap-5 my-8">
-        <button id="show-donation-section"
-            class="bg-primaryBg px-8 py-3 rounded-md border border-gray-300">Donation</button>
-        <button id="show-history-section" class="px-8 py-3 rounded-md border border-gray-300">History</button>
+        <!-- features button starts here -->
+        <div id="features-button" class="flex justify-center gap-5 my-8 features">
+            <button id="show-donation-section"
+                class="bg-primaryBg px-8 py-3 rounded-md border border-gray-300">Donation</button>
+            <button id="show-history-section" class="px-8 py-3 rounded-md border border-gray-300">History</button>
+        </div>
+        <!-- features button ends here -->
     </div>
-    <!-- features button ends here -->
 
     <!-- main starts here -->
     <main class="max-w-screen-xl mx-auto px-5 lg:px-0">
@@ -155,7 +159,7 @@
 
         <!-- history section -->
         <div id="history-section" class="hidden space-y-3 mb-12">
-            
+
         </div>
 
     </main>
@@ -165,6 +169,7 @@
     <script src="./js/common-function.js"></script>
     <script src="./js/donate.js"></script>
     <script src="./js/features.js"></script>
+    <script src="./js/scroll.js"></script>
 
     <!-- modal -->
     <dialog id="donate-confirmation-modal" class="modal">

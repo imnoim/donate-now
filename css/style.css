@@ -1,0 +1,7 @@
+.features.scrolled {
+    background: rgba(255, 255, 255, 0.425);
+    backdrop-filter: blur(50px);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px;
+}
