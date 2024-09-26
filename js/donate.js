@@ -19,6 +19,23 @@ document.getElementById('btn-noakhali-donate').addEventListener('click', functio
                 document.getElementById('account-balance').innerText = newAccountBalance;
 
                 document.getElementById('noakhali-input-field').value = '';
+
+                // add transaction details to history section
+
+                let today = new Date();
+
+                const div = document.createElement('div');
+                div.classList.add('p-5');
+                div.classList.add('lg:p-7');
+                div.classList.add('border');
+                div.classList.add('border-gray-200');
+                div.classList.add('rounded-lg');
+                div.innerHTML = `
+                <h4 class = "text-2xl font-bold">${donateAmount} Taka is Donated for Flood at Noakhali, Bangladesh</h4>
+                <p class ="text-gray-500">Date: ${today}</p>
+            `
+                document.getElementById('history-section').appendChild(div);
+
             }
             else {
                 alert('out of balance');
@@ -54,6 +71,22 @@ document.getElementById('btn-feni-donate').addEventListener('click', function (e
                 document.getElementById('account-balance').innerText = newAccountBalance;
 
                 document.getElementById('feni-input-amount').value = '';
+
+                // add transaction details to history section
+
+                let today = new Date();
+
+                const div = document.createElement('div');
+                div.classList.add('p-5');
+                div.classList.add('lg:p-7');
+                div.classList.add('border');
+                div.classList.add('border-gray-200');
+                div.classList.add('rounded-lg');
+                div.innerHTML = `
+                <h4 class = "text-2xl font-bold">${donateAmount} Taka is Donated for Flood Relief in Feni,Bangladesh</h4>
+                <p class ="text-gray-500">Date: ${today}</p>
+            `
+                document.getElementById('history-section').appendChild(div);
             }
             else {
                 alert('out of balance');
@@ -89,6 +122,22 @@ document.getElementById('btn-quota-movement').addEventListener('click', function
                 document.getElementById('account-balance').innerText = newAccountBalance;
 
                 document.getElementById('donate-amount-for-quota').value = '';
+
+                // add transaction details to history section
+
+                let today = new Date();
+
+                const div = document.createElement('div');
+                div.classList.add('p-5');
+                div.classList.add('lg:p-7');
+                div.classList.add('border');
+                div.classList.add('border-gray-200');
+                div.classList.add('rounded-lg');
+                div.innerHTML = `
+                <h4 class = "text-2xl font-bold">${donateAmount} Taka is Donated for Injured in the Quota Movement</h4>
+                <p class ="text-gray-500">Date: ${today}</p>
+            `
+                document.getElementById('history-section').appendChild(div);
             }
             else {
                 alert('out of balance');

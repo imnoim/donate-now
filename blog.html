@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate for flood effected people</title>
+    <!-- google font lexend -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisyUI & tailwind cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navBg: '#F9F7F3',
+                        pTagColor: 'rgba(17, 17, 17, 0.7)',
+                    },
+                    fontFamily: {
+                        lexend: 'Lexend',
+                    },
+                    backgroundColor: {
+                        primaryBg: '#B4F461',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-lexend">
+    <!-- nav starts here -->
+    <div class="bg-navBg">
+        <div class="max-w-screen-xl mx-auto flex justify-between py-5 px-5 lg:px-0">
+            <button id="go-home-page" class="bg-primaryBg px-8 py-1 rounded-md">Home</button>
+            <div class="flex items-center gap-4">
+                <img src="./assets/logo.png" alt="logo-coin-money">
+                <h4 class="hidden lg:block">Donate Bangladesh</h4>
+            </div>
+            <div class="flex items-center gap-2">
+                <img src="./assets/coin.png" alt="coin-image">
+                <h4>5500</h4>
+                <h4>BDT</h4>
+            </div>
+        </div>
+    </div>
+    <!-- nav ends here -->
+
+    <!-- main starts here -->
+    <main class="max-w-screen-xl mx-auto px-5 lg:px-0 mt-16 mb-16">
+        <div class="collapse collapse-arrow border border-gray-200 rounded-lg">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is like a tree of objects for a web page. It lets you use programming languages like JavaScript to change the structure, style, and content of the page. Think of it as a way to make web pages interactive and dynamic</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-200 rounded-lg">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>To select an element from the DOM, use document.getElementById('id') for an element with a specific ID, or document.querySelector('selector') for the first element that matches a CSS selector. These methods help you find and work with elements on a webpage.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-200 rounded-lg">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is when you add one event listener to a parent element instead of many to child elements. This is useful because it saves memory and makes your code cleaner and faster. For example, one click event on a list can handle clicks for all list items.</p>
+            </div>
+        </div>
+        <div class="collapse collapse-arrow border border-gray-200 rounded-lg">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+                <p>To change an element’s attributes and styles using the DOM, use JavaScript. For example, element.setAttribute('attribute', 'value') changes an attribute, and element.style.property = 'value' changes a style. This helps you control how elements look and behave on a webpage</p>
+            </div>
+        </div>
+    </main>
+    <!-- main ends here -->
+
+    <script>
+        document.getElementById('go-home-page').addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location.href = '/index.html';
+        });
+    </script>
+</body>
+
+</html>
